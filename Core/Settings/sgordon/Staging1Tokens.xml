@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ConfigurationTokens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Domains -->
+
+  <AppSubDomain>sgordon</AppSubDomain>
+  <StsSubDomain>sgordon</StsSubDomain>
+  <ServiceSubDomain>sgordon</ServiceSubDomain>
+
+  <RealmAppender>_{AppSubDomain}</RealmAppender>
+  <PortAppender>:444</PortAppender>
+
+  <!-- Databases -->
+
+  <DatabaseServer>STG-BOS-SQL-N01</DatabaseServer>
+  <DatabaseFailoverPartner>STG-BOS-SQL-N02</DatabaseFailoverPartner>
+  <DocumentContentDatabaseServer>STG-BOS-SQL-N01</DocumentContentDatabaseServer>
+  <DocumentContentDatabaseFailoverPartner>STG-BOS-SQL-N02</DocumentContentDatabaseFailoverPartner>
+  <DocumentContentIndexDatabaseServer>STG-BOS-SQL-N01</DocumentContentIndexDatabaseServer>
+  <DocumentContentIndexDatabaseFailoverPartner>STG-BOS-SQL-N02</DocumentContentIndexDatabaseFailoverPartner>
+  <ExternalAccountingDatabaseServer>STG-BOS-SQL-N01</ExternalAccountingDatabaseServer>
+  <ExternalAccountingDatabaseFailoverPartner>STG-BOS-SQL-N02</ExternalAccountingDatabaseFailoverPartner>
+  <PayrollDatabaseServer>STG-BOS-SQL-N01</PayrollDatabaseServer>
+  <PayrollDatabaseFailoverPartner>STG-BOS-SQL-N02</PayrollDatabaseFailoverPartner>
+  <SpreadsheetDatabaseServer>STG-BOS-SQL-N01</SpreadsheetDatabaseServer>
+  <SpreadsheetDatabaseFailoverPartner>STG-BOS-SQL-N02</SpreadsheetDatabaseFailoverPartner>
+  <TestDataDatabaseServer>STG-BOS-SQL-N01</TestDataDatabaseServer>
+  <TestDataDatabaseFailoverPartner>STG-BOS-SQL-N02</TestDataDatabaseFailoverPartner>
+  <LoggingDatabaseServer>STG-BOS-SQL-N01</LoggingDatabaseServer>
+  <LoggingDatabaseFailoverPartner>STG-BOS-SQL-N02</LoggingDatabaseFailoverPartner>
+  <DataCacheClusterName>sgordon</DataCacheClusterName>
+  <DataCachePortNumber>22233</DataCachePortNumber>
+
+  <DatabaseNameAppender>Staging</DatabaseNameAppender>
+  <DirectoryNameAppender>_Local</DirectoryNameAppender>
+
+  <!-- Application Addresses -->
+
+  <BaseIntranetAddress>http://spmigration.hsp.com</BaseIntranetAddress>
+  <BaseOscAddress>https://{AppSubDomain}.hsp.com{PortAppender}/web/</BaseOscAddress>
+  <BaseOscAdminAddress>https://{AppSubDomain}.hsp.com{PortAppender}/admin/</BaseOscAdminAddress>
+
+  <!-- Misc -->
+
+  <SourcePath>C:\Engineering</SourcePath>
+  <EmailAddress>sgordon@hsp.com</EmailAddress>
+  <DocumentUploadFilePath>C:\Drop</DocumentUploadFilePath>
+
+  <!-- Services -->
+
+  <ServiceBaseAddress>{ServiceSubDomain}.hsp.com</ServiceBaseAddress>
+  <SendTimeOut>00:10:00</SendTimeOut>
+  <ReceiveTimeout>00:10:00</ReceiveTimeout>
+
+  <!-- Queues -->
+
+  <QueueBaseAddress>localhost</QueueBaseAddress>
+  <QueueNamePrefix>.\private$\</QueueNamePrefix>
+  <QueueScopeDesignator>/private</QueueScopeDesignator>
+
+  <!-- Sts -->
+
+  <StsBaseAddress>{StsSubDomain}.hsp.com</StsBaseAddress>
+  <StsCertificateName>CN={StsSubDomain}.hsp.com, OU=IT, O="High Street Partners, Inc.", L=Boston, S=MA, C=US</StsCertificateName>
+  <StsCertificateThumbPrint>e7df967192d623d55e4785825ca621a62cf8bcaf</StsCertificateThumbPrint>
+
+</ConfigurationTokens>

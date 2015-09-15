@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>CPI.Security</id>
+        <version>0.0</version>
+        <title />
+        <authors>John Caccavaro</authors>
+        <owners>Computer Power,Inc</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>My package description.</description>
+    </metadata>
+    <files>
+        <file src="Security\bin\Debug\CPI.Security.dll" target="lib" />
+        <file src="Security\bin\Debug\CPI.Security.pdb" target="lib" />
+        <file src="Security\**\*.cs" target="src" />
+    </files>
+</package>

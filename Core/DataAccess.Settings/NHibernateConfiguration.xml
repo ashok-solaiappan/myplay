@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NHibernateConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConnectionConfiguration>
+    <PropertyName>connection.connection_string</PropertyName>
+  </ConnectionConfiguration>
+  <PropertyList>
+    <Property>
+      <Name>connection.provider</Name>
+      <Value>NHibernate.Connection.DriverConnectionProvider</Value>
+    </Property>
+    <Property>
+      <Name>connection.driver_class</Name>
+      <Value>NHibernate.Driver.SqlClientDriver</Value>
+    </Property>
+    <Property>
+      <Name>show_sql</Name>
+      <Value>false</Value>
+    </Property>
+    <Property>
+      <Name>generate_statistics</Name>
+      <Value>true</Value>
+    </Property>
+    <Property>
+      <Name>dialect</Name>
+      <Value>NHibernate.Dialect.MsSql2005Dialect</Value>
+    </Property>
+    <Property>
+      <Name>current_session_context_class</Name>
+      <Value>thread_static</Value>
+    </Property>
+    <Property>
+      <Name>hbm2ddl.keywords</Name>
+      <Value>auto-quote</Value>
+    </Property>
+    <Property>
+      <Name>adonet.batch_size</Name>
+      <Value>20</Value>
+    </Property>
+    <Property>
+      <Name>query.substitutions</Name>
+      <Value>true 1, false 0, yes 'Y', no 'N'</Value>
+    </Property>
+  </PropertyList>
+</NHibernateConfiguration>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>CPI.Settings</id>
+        <version>0.0</version>
+        <title />
+        <authors>John Caccavaro</authors>
+        <owners>Computer Power,Inc</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>My package description.</description>
+        <dependencies>
+            <dependency id="CPI.Core.Environment" />
+            <dependency id="CPI.Core.DataAccess" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="Settings\bin\Debug\CPI.Settings.dll" target="lib" />
+        <file src="Settings\bin\Debug\CPI.Settings.pdb" target="lib" />
+        <file src="Settings\**\*.cs" target="src" />
+    </files>
+</package>

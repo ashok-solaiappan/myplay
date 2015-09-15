@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="BuildServer" id="a7b56e35-8bc7-461c-825d-1d759f1f1f3e" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>These are default test settings for a build server test run.</Description>
+  <Deployment>
+    <DeploymentItem filename="Tests\bin\Debug\" />
+    <DeploymentItem filename="..\..\..\..\Database\" outputDirectory="Database" />
+    <DeploymentItem filename="..\..\..\..\Settings\CPI\" outputDirectory="Settings" />
+  </Deployment>
+  <Execution>
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="LocalMachineDefaultRole">
+    </AgentRule>
+  </Execution>
+</TestSettings>
